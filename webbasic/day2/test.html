@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            text-align: center;
+        }
+
+        .bg_green {
+            background-color: lawngreen;
+            font-weight: bold;
+        }
+
+        .bg_pink {
+            background-color: rgb(238, 194, 208);
+            border-color: yellow;
+        }
+
+        .f_color {
+            color: blue;
+        }
+
+        #bg_yellow {
+            background-color: yellow;
+        }
+    </style>
+    <title>test</title>
+</head>
+
+<body>
+    <form action="check">
+        <table border="1">
+            <tr>
+                <td width="90" class="bg_green">항목</td>
+                <td class="bg_green">입력</td>
+            </tr>
+            <tr>
+                <td class="f_color">번호</td>
+                <td><input class="bg_pink" type="text"></td>
+            </tr>
+            <tr>
+                <td class="f_color">제목</td>
+                <td><input class="bg_pink" type="text"></td>
+            </tr>
+            <tr>
+                <td class="f_color">내용</td>
+                <td><input class="bg_pink" type="text"></td>
+            </tr>
+            <tr>
+                <td class="f_color">작성자</td>
+                <td><input class="bg_pink" type="text"></td>
+            </tr>
+            <tr>
+                <td id="bg_yellow" colspan="2" align="center">
+                    <input type="submit" value="글쓰기 완료." style="color: green;
+                    border-radius: 0;
+                    border: 0;
+                    width: 120px;
+                    height: 40px;
+                    font-size: large;">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
