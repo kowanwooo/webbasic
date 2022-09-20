@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="check">
+        <table border="1">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>패스워드</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="로그인 처리">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form action="check">
+        <table border="1">
+            <tr>
+                <td>가입할 id</td>
+                <td><input type="text" name="id"></td>
+            </tr>
+            <tr>
+                <td>가입할 pw</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td>가입할 이름</td>
+                <td><input type="text" name="name" placeholder="이름 성순서대로"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <input type="radio" name="gender" checked>남
+                    <input type="radio" name="gender">여
+                </td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td>
+                    <input type="checkbox" name="hobby" checked>달리기
+                    <input type="checkbox" name="hobby">동영상보기
+                    <input type="checkbox" name="hobby">인터넷사용
+                </td>
+            </tr>
+            <tr>
+                <td>전화번호 통신사</td>
+                <td>
+                    <select>
+                        <option value="sktelecom">SKT</option>
+                        <option value="lgt">LGT</option>
+                        <option value="kt">KT</option>
+                        <option value="etctele" selected>알뜰폰</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>전화번호</td>
+                <td>
+                    <input type="number" placeholder="-없이 숫자로 이어서 쓰세요.">
+                </td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>가입한 시기</td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+            </tr>
+            <tr>
+                <td>가입한 주</td>
+                <td>
+                    <input type="week">
+                </td>
+            </tr>
+            <tr>
+                <td>하고 싶은 말</td>
+                <td>
+                    <textarea cols="30" rows="5" placeholder="100글자로 써주세요."></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
