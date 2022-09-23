@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#b1').click(function () {
+                id = $('#id').val()
+                idLen = id.length
+
+                if (idLen < 5) {
+                    $('#result').html('<font color=red>5미만! 재입력해주세요.</font>')
+                } else {
+                    $('#result').html('<font color=blue>제대로 된 id입니다.</font>')
+                }
+            })
+
+            $('#pw2').keyup(function () {
+                pw1 = $('#pw1').val()
+                pw2 = $('#pw2').val()
+                if (pw1 == pw2) {
+                    $('#result').html('<font color=blue>똑같아요.</font>')
+                } else {
+                    $('#result').html('<font color=red>달라요</font>')
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    아이디: <input id="id" value="test"><br>
+    <button id="b1">아이디 글자수 확인</button>
+    <hr>
+    패스워드: <input id="pw1" value="1234"> <br>
+    패스워드 확인: <input id="pw2" value="1234"> <br>
+    <button id="b2">패스워드 일치 확인</button>
+    <hr>
+    <div id="result"></div>
+</body>
+</body>
+
+</html>
